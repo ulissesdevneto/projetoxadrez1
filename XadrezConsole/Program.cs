@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Globalization;
-using Tabuleiro;
+using tabuleiro;
 
 namespace XadrezConsole
 {
@@ -11,11 +11,7 @@ namespace XadrezConsole
 
             CultureInfo CI = CultureInfo.InvariantCulture;
 
-            Posicao P;
-
-            P = new Posicao(3, 4);
-
-            Console.WriteLine("Posicao: " + P);
+            Tabuleiro tab = new Tabuleiro(8, 8);
 
             Console.ReadLine();
 
