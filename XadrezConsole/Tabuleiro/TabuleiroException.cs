@@ -2,13 +2,12 @@
 
 namespace tabuleiro
 {
-    internal class TabuleiroException : Exception
+    class TabuleiroException : Exception
     {
+
         public TabuleiroException(string msg) : base(msg)
         {
         }
-
-
 
 
 
