@@ -2,7 +2,7 @@
 using tabuleiro;
 using xadrez;
 
-namespace xadrez_console
+namespace XadrezConsole
 {
     class Program
     {
@@ -15,6 +15,7 @@ namespace xadrez_console
 
                 while (!partida.terminada)
                 {
+
                     try
                     {
                         Console.Clear();
@@ -29,7 +30,7 @@ namespace xadrez_console
 
                         Console.Clear();
                         Tela.imprimirTabuleiro(partida.tab, posicoesPossiveis);
-                        
+
                         Console.WriteLine();
                         Console.Write("Destino: ");
                         Posicao destino = Tela.lerPosicaoXadrez().toPosicao();
@@ -53,7 +54,6 @@ namespace xadrez_console
 
             Console.ReadLine();
         }
-
 
 
     }
